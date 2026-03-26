@@ -194,13 +194,17 @@ POST /api/token/refresh/
 
 ## API Endpoints
 
-| Endpoint                    | Description                |
-| --------------------------- | -------------------------- |
-| `/api/articles/`            | List or create articles    |
-| `/api/articles/<id>/`       | Retrieve/update/delete     |
-| `/api/articles/subscribed/` | Subscribed content         |
-| `/api/newsletters/`         | List or create newsletters |
-| `/api/approved/`            | Approval webhook endpoint  |
+| Endpoint                        | Description                       |
+|---------------------------------|-----------------------------------|
+| `/api/token/`                   | Obtain JWT token                  |
+| `/api/token/refresh/`           | Refresh JWT token                 |
+| `/api/login/`                   | Alternative login endpoint        |
+| `/api/articles/`                | List or create articles           |
+| `/api/articles/<id>/`           | Retrieve/update/delete article    |
+| `/api/articles/subscribed/`     | View subscribed articles          |
+| `/api/newsletters/`             | List or create newsletters        |
+| `/api/newsletters/<id>/`        | Retrieve/update/delete newsletter |
+| `/api/approved/`                | Approval webhook endpoint         |
 
 ---
 
