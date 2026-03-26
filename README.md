@@ -57,7 +57,7 @@ It supports multiple user roles, article workflows, subscriptions, newsletters, 
 
 ```bash
 git clone https://github.com/your-username/vault-times.git
-cd vault-times
+cd news_project
 ```
 
 ---
