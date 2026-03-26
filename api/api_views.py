@@ -7,7 +7,7 @@ from django.db import models
 from rest_framework.exceptions import PermissionDenied
 from .models import Article, Newsletter
 from .serializers import ArticleSerializer, NewsletterSerializer
-from .permissions import IsJournalist, IsEditor, IsJournalistOrEditor, CanModifyArticle, CanModifyNewsletter
+from .permissions import IsJournalist, IsEditor, IsJournalistOrEditor, CanModifyNewsletter
 
 from rest_framework.generics import (
     ListAPIView,
