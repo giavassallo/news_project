@@ -1,0 +1,138 @@
+# Project Planning – Vault Times
+
+## Project Goal
+
+To build a role-based news publishing platform that supports article creation, approval workflows, subscriptions, and API access.
+
+---
+
+## User Roles
+
+### Reader
+
+* Subscribe to publishers and journalists
+* View approved articles
+* Receive notifications
+
+### Journalist
+
+* Create articles
+* Manage own content
+* Create newsletters
+
+### Editor
+
+* Review submitted articles
+* Approve or reject articles
+
+### Publisher
+
+* Manage organization
+* View associated journalists and editors
+
+---
+
+## Core Features
+
+### 1. Authentication System
+
+* Django authentication
+* JWT for API access
+
+---
+
+### 2. Article Management
+
+* Create, edit, delete articles
+* Approval workflow using editor role
+* Only approved articles visible to readers
+
+---
+
+### 3. Subscription System
+
+* Readers can subscribe to:
+
+  * Publishers
+  * Journalists
+* Personalized article feed
+
+---
+
+### 4. Newsletter System
+
+* Create newsletters
+* Attach multiple articles
+* View newsletters per user
+
+---
+
+### 5. Email Notification System
+
+* Triggered when article is approved
+* Sends updates to subscribed users
+* Implemented using Django signals
+
+---
+
+### 6. API Layer
+
+* RESTful endpoints using Django REST Framework
+* JWT authentication
+* CRUD operations for:
+
+  * Articles
+  * Newsletters
+
+---
+
+## System Architecture
+
+* Django MVC structure
+* Separate API layer (`api_views`)
+* Templates for frontend rendering
+* Signals for event-driven logic
+
+---
+
+## Workflow Design
+
+1. Journalist creates article
+2. Article is marked as pending
+3. Editor reviews article
+4. Editor approves article
+5. System triggers:
+
+   * Email notifications
+   * API webhook
+6. Readers can now view the article
+
+---
+
+## Technologies Used
+
+* Django
+* Django REST Framework
+* MariaDB
+* JWT Authentication
+* HTML/CSS Templates
+
+---
+
+## Challenges Faced
+
+* Managing role-based permissions
+* Designing approval workflow
+* Handling subscriptions efficiently
+* Integrating API with frontend logic
+
+---
+
+## Future Improvements
+
+* Add commenting system
+* Add article ratings
+* Improve UI responsiveness
+* Deploy to cloud (AWS/Heroku)
+
+---
